@@ -27,8 +27,9 @@ h1 {
 }
 
 img {
-    max-width: 40%;
-    height: auto;
+    /* max-width: 40%; */
+    height: 20rem;
+    width: auto;
 }
 
 .social-links {
@@ -60,4 +61,68 @@ button {
 button:hover {
     background-color: #e55500;
     /* Darker shade when hovered */
+}
+
+@media (max-width: 768px) {
+
+    /* Styles for mobile devices */
+    body {
+        font-size: 16px;
+        /* Adjust font size for mobile */
+    }
+
+    header {
+        padding: 15px 0;
+        /* Smaller padding for header on mobile */
+    }
+
+    h1 {
+        font-size: 28px;
+        /* Smaller font size for heading on mobile */
+    }
+
+    .container {
+        max-width: 100%;
+        /* Full width for container on mobile */
+        padding: 10px;
+        /* Smaller padding for container on mobile */
+    }
+
+    img {
+        height: 20rem;
+        width: auto;
+    }
+
+    .social-links {
+        margin-top: 10px;
+        /* Smaller margin for social links on mobile */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .social-links a {
+        font-size: 14px;
+        margin: 0.5rem;
+        /* Smaller font size for social links on mobile */
+    }
+
+    /* Style the buttons for mobile */
+    button {
+        /* Change background color for mobile */
+        background-color: #e55500;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+
+    button:hover {
+        background-color: #cc4400;
+        /* Darker shade when hovered on mobile */
+    }
 }
