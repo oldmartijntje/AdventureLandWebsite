@@ -59,40 +59,89 @@ nextImageButton.addEventListener('click', stopImageCycle);
 
 // Define a JavaScript dictionary with reviews
 const reviews = [
-    // {
-    //     name: "John Doe",
-    //     rating: 5,
-    //     comment: "Adventure Land is an amazing board game! I love it!",
-    // },
-    // {
-    //     name: "Jane Smith",
-    //     rating: 4,
-    //     comment: "Great fun for the whole family. We play it every weekend!",
-    // },
-    // {
-    //     name: "Mike Johnson",
-    //     rating: 5,
-    //     comment: "The game mechanics are brilliant. Highly recommended!",
-    // },
+    {
+        name: "markmasters",
+        rating: 9,
+        comment: "Played at Spiel. Fun game with a nice mechanic that allows either to pick first or grants money.",
+        link: "https://boardgamegeek.com/boardgame/356630/adventure-land/ratings",
+    },
+    {
+        name: "oldmartijntje",
+        rating: 10,
+        comment: "Awesome game, fun for all ages.",
+        link: "https://boardgamegeek.com/boardgame/356630/adventure-land/ratings",
+    },
+    {
+        name: "Brainmaster",
+        rating: 9,
+        comment: "",
+        link: "https://boardgamegeek.com/boardgame/356630/adventure-land/ratings",
+    },
+    {
+        name: "de Beek",
+        rating: 8,
+        comment: "",
+        link: "https://boardgamegeek.com/boardgame/356630/adventure-land/ratings",
+    },
+    {
+        name: "bridgetvh",
+        rating: 8,
+        comment: "",
+        link: "https://boardgamegeek.com/thread/3159354/review-bordspelwereldnl-dutch",
+    },
 ];
 
 let currentReviewIndex = 0;
 
 // Function to display reviews
 function displayReviews() {
-    const reviewsList = document.getElementById("reviews-list");
-
-    // Clear any existing reviews
-    reviewsList.innerHTML = '';
-
-    // Display the current review
+    const reviewsContainer = document.getElementById("reviews-container");
     const review = reviews[currentReviewIndex];
-    const listItem = document.createElement("li");
-    listItem.innerHTML = `
-        <strong>${review.name}</strong> (Rating: ${review.rating}):
-        <p>${review.comment}</p>
+
+    // Create a review element
+    const reviewElement = document.createElement("div");
+    reviewElement.classList.add("review");
+
+    // Add image if available
+    if (review.image) {
+        const imageElement = document.createElement("img");
+        imageElement.classList.add("review-image");
+        imageElement.src = review.image;
+        reviewElement.appendChild(imageElement);
+    } else {
+        // Add placeholder image
+        const imageElement = document.createElement("img");
+        imageElement.classList.add("review-image");
+        imageElement.src = "assets/default.jpg";
+        reviewElement.appendChild(imageElement);
+    }
+
+    // Add name, rating, and other information
+    const reviewInfo = document.createElement("div");
+    reviewInfo.classList.add("review-info");
+    reviewInfo.innerHTML = `
+        <div class="review-name">${review.name}</div>
+        <div class="review-rating">Rating: ${review.rating}</div>
     `;
-    reviewsList.appendChild(listItem);
+
+    // Add comment if available
+    if (review.comment) {
+        reviewInfo.innerHTML += `<div class="review-comment">${review.comment}</div>`;
+    }
+
+    // Add link to the original post
+    if (review.link) {
+        reviewInfo.innerHTML += `
+            <a class="review-link" href="${review.link}" target="_blank">Original Post</a>
+        `;
+    }
+
+    // Append reviewInfo to reviewElement
+    reviewElement.appendChild(reviewInfo);
+
+    // Clear existing reviews and append the new review
+    reviewsContainer.innerHTML = '';
+    reviewsContainer.appendChild(reviewElement);
 }
 
 // Function to show the next review
