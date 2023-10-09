@@ -63,25 +63,25 @@ const reviews = [
         name: "markmasters",
         rating: 9,
         comment: "Played at Spiel. Fun game with a nice mechanic that allows either to pick first or grants money.",
-        link: "https://boardgamegeek.com/boardgame/356630/adventure-land/ratings",
+        link: "https://boardgamegeek.com/user/markmasters",
     },
     {
         name: "oldmartijntje",
         rating: 10,
         comment: "Awesome game, fun for all ages.",
-        link: "https://boardgamegeek.com/boardgame/356630/adventure-land/ratings",
+        link: "https://boardgamegeek.com/boardgame/356630/adventure-land/ratings#:~:text=10-,oldmartijntje,-Oct%202023",
     },
     {
         name: "Brainmaster",
         rating: 9,
         comment: "",
-        link: "https://boardgamegeek.com/boardgame/356630/adventure-land/ratings",
+        link: "https://boardgamegeek.com/boardgame/356630/adventure-land/ratings#:~:text=9-,Brainmaster,-Sep%202023",
     },
     {
         name: "de Beek",
         rating: 8,
         comment: "",
-        link: "https://boardgamegeek.com/boardgame/356630/adventure-land/ratings",
+        link: "https://boardgamegeek.com/boardgame/356630/adventure-land/ratings#:~:text=8-,de%20Beek,-Oct%202023",
     },
     {
         name: "bridgetvh",
@@ -167,7 +167,7 @@ displayReviews();
 
 // Add automatic image cycling with a timer
 function startReviewCycle() {
-    reviewIntervalId = setInterval(showNextReview, 9000); // Change image every 9 seconds (adjust as needed)
+    reviewIntervalId = setInterval(showNextReview, 6000); // Change image every 6 seconds (adjust as needed)
 }
 
 function stopReviewCycle() {
