@@ -45,3 +45,19 @@ img {
 .social-links a:last-child {
     margin-right: 0;
 }
+
+button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #e55500;
+    /* Darker shade when hovered */
+}

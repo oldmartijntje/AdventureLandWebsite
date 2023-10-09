@@ -13,7 +13,11 @@
         <h1>Adventure Land - Build Your Dream Park</h1>
     </header>
     <div class="container">
-        <img src="assets/Adventureland_3D.jpg" alt="Adventure Land Box Image">
+        <div class="ïmgContainer">
+            <img id="galleryImage" src="assets/Adventureland_3D.jpg" alt="">
+        </div>
+        <button id="prevButton">Previous</button>
+        <button id="nextButton">Next</button>
         <p>In Adventure Land, start your journey to create the most exciting theme park. Build thrilling attractions,
             hire the best staff, and invest your money wisely. Complete secret missions to boost the popularity of your
             park. The ultimate goal is to win the prestigious Award!</p>
@@ -22,9 +26,14 @@
             <a href="https://www.instagram.com/adventure_land2023/" target="_blank">Instagram</a>
             <a href="https://www.thegamemaster.nl/nl/spellen-adventureland.htm" target="_blank">TheGameMaster</a>
             <a href="https://boardgamegeek.com/boardgame/356630/adventure-land" target="_blank">BoardGameGeek</a>
+            <a href="assets/rules.pdf" download id="download-link">Download Rules PDF</a>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="main.js">
+        document.getElementById('download-link').addEventListener('click', function () {
+            // Add your tracking code here (e.g., Google Analytics event tracking)
+        });
+    </script>
 </body>
 
 </html>
