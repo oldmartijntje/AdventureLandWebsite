@@ -19,7 +19,7 @@ const reviews = [
         name: "markmasters",
         rating: 9,
         comment: "Played at Spiel. Fun game with a nice mechanic that allows either to pick first or grants money.",
-        link: "https://boardgamegeek.com/user/markmasters",
+        link: "https://boardgamegeek.com/boardgame/356630/adventure-land/ratings#:~:text=9-,markmasters,-Oct%202023",
     },
     {
         name: "oldmartijntje",
