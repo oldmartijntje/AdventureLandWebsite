@@ -32,6 +32,10 @@ function startImageCycle() {
 
 function stopImageCycle() {
     clearInterval(imageIntervalId);
+    gtag('event', 'button_click', {
+        'event_category': 'Button Clicks',
+        'event_label': 'navigated images',
+    });
 }
 
 function displayReviews() {
@@ -94,6 +98,10 @@ function startReviewCycle() {
 }
 
 function stopReviewCycle() {
+    gtag('event', 'button_click', {
+        'event_category': 'Button Clicks',
+        'event_label': 'navigated reviews',
+    });
     clearInterval(reviewIntervalId);
 }
 
