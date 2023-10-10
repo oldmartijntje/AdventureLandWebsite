@@ -4,21 +4,8 @@ const nextImageButton = document.getElementById('nextButton'); // Add this butto
 const prevReviewButton = document.getElementById('prevReviewButton'); // Add this button to your HTML
 const nextReviewButton = document.getElementById('nextReviewButton'); // Add this button to your HTML
 
-const imageUrls = [
-    'assets/Adventureland_3D.jpg',
-    'assets/Cover 2D.jpg',
-    'assets/The Gorilla Shake.jpg',
-    'assets/Snack Sparrow.jpg',
-    'assets/Trucks Playing Tricks.jpg',
-    'assets/Toilet Ladies.jpg',
-    'assets/Tronville.jpg',
-    'assets/Rock & Roll Ride.jpg',
-    'assets/Perfect waves.jpg',
-    'assets/Miami Vibes.jpg',
-    'assets/Daddy Love.jpg',
-    'assets/Award card.jpg',
-    // Add more image URLs as needed
-];
+// Import the variables from data.js
+// import { reviews, imageUrls } from "./data.js";
 
 let currentIndex = 0;
 let imageIntervalId;
@@ -57,44 +44,7 @@ startImageCycle();
 prevImageButton.addEventListener('click', stopImageCycle);
 nextImageButton.addEventListener('click', stopImageCycle);
 
-// Define a JavaScript dictionary with reviews
-const reviews = [
-    {
-        name: "markmasters",
-        rating: 9,
-        comment: "Played at Spiel. Fun game with a nice mechanic that allows either to pick first or grants money.",
-        link: "https://boardgamegeek.com/user/markmasters",
-    },
-    {
-        name: "oldmartijntje",
-        rating: 10,
-        comment: "Awesome game, fun for all ages.",
-        link: "https://boardgamegeek.com/boardgame/356630/adventure-land/ratings#:~:text=10-,oldmartijntje,-Oct%202023",
-    },
-    {
-        name: "hollandiase",
-        comment: "Wat een leuk spel is dit! Bieden, bluffen, betalen,sparen,setcollection.. er zit van alles in. En daarnaast ook nog eens spannend!",
-        link: "https://www.instagram.com/p/CyBzqv1Lm8m/?igshid=MzRlODBiNWFlZA==",
-    },
-    {
-        name: "Brainmaster",
-        rating: 9,
-        comment: "",
-        link: "https://boardgamegeek.com/boardgame/356630/adventure-land/ratings#:~:text=9-,Brainmaster,-Sep%202023",
-    },
-    {
-        name: "de Beek",
-        rating: 8,
-        comment: "",
-        link: "https://boardgamegeek.com/boardgame/356630/adventure-land/ratings#:~:text=8-,de%20Beek,-Oct%202023",
-    },
-    {
-        name: "bridgetvh",
-        rating: 8,
-        comment: "",
-        link: "https://boardgamegeek.com/thread/3159354/review-bordspelwereldnl-dutch",
-    },
-];
+
 
 let currentReviewIndex = 0;
 
