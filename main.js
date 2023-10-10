@@ -72,6 +72,11 @@ const reviews = [
         link: "https://boardgamegeek.com/boardgame/356630/adventure-land/ratings#:~:text=10-,oldmartijntje,-Oct%202023",
     },
     {
+        name: "hollandiase",
+        comment: "Wat een leuk spel is dit! Bieden, bluffen, betalen,sparen,setcollection.. er zit van alles in. En daarnaast ook nog eens spannend!",
+        link: "https://www.instagram.com/p/CyBzqv1Lm8m/?igshid=MzRlODBiNWFlZA==",
+    },
+    {
         name: "Brainmaster",
         rating: 9,
         comment: "",
@@ -121,8 +126,12 @@ function displayReviews() {
     reviewInfo.classList.add("review-info");
     reviewInfo.innerHTML = `
         <div class="review-name">${review.name}</div>
-        <div class="review-rating">Rating: ${review.rating}</div>
+        `;
+
+    if (review.rating) {
+        reviewInfo.innerHTML += `<div class="review-rating">Rating: ${review.rating}</div>
     `;
+    }
 
     // Add comment if available
     if (review.comment) {
