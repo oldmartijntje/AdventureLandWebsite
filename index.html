@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adventure Land Board Game</title>
+    <title id="T.title">Adventure Land Board Game</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
 
 
     <meta property="og:title" content="Adventure Land - Build Your Dream Park.">
@@ -29,9 +30,13 @@
 
 <body>
     <header>
-        <h1>Adventure Land - Build Your Dream Park</h1>
+        <h1 id="T.headerTitle">Adventure Land - Build Your Dream Park</h1>
     </header>
     <div class="container">
+        <div id="language-selector">
+            <button onclick="setLanguage('NL')" class="flag-icon flag-icon-nl" title="Nederlands"></button>
+            <button onclick="setLanguage('EN')" class="flag-icon flag-icon-us" title="English"></button>
+        </div>
         <div class="ïmgContainer">
             <img id="galleryImage" src="assets/Adventureland_3D.jpg" alt="">
         </div>
@@ -40,13 +45,15 @@
 
 
         <div class="additional-info">
-            <h2>Build Your Dream Park!</h2>
-            <p>In Adventure Land, start your journey to create the most exciting theme park. Build thrilling
+            <h2 id="T.infoTitle1">Build Your Dream Park!</h2>
+            <p id="T.infoText1">In Adventure Land, start your journey to create the most exciting theme park. Build
+                thrilling
                 attractions, hire the best staff, and invest your money wisely. Complete secret missions to boost the
                 popularity of your park. The ultimate goal is to win the prestigious Award!</p>
 
-            <h2>One Grand Adventure</h2>
-            <p>Adventure Land feels like a huge roller coaster ride. In just one hour, so much happens that you'll need
+            <h2 id="T.infoTitle2">One Grand Adventure</h2>
+            <p id="T.infoText2">Adventure Land feels like a huge roller coaster ride. In just one hour, so much happens
+                that you'll need
                 a moment to catch your breath. It all starts with the auction of the parks. Each park looks completely
                 different in every game. Which one will you choose? This jumpstart gives you certain opportunities and
                 possible strategies right from the start. Will you specialize in a particular theme? Or will you hire
@@ -56,22 +63,24 @@
 
 
         <div class="review-section">
-            <h2>Reviews</h2>
+            <h2 id="T.reviewsTitle">Reviews</h2>
             <div id="reviews-container" class="reviews-container"></div>
             <button id="prevReviewButton">Previous Review</button>
             <button id="nextReviewButton">Next Review</button>
         </div>
 
 
-        <h2>Links:</h2>
+        <h2 id="T.linksTitle">Links:</h2>
         <div class="social-links">
-            <a href="https://www.instagram.com/adventure_land2023/" target="_blank">Instagram</a>
-            <a href="https://www.thegamemaster.nl/nl/spellen-adventureland.htm" target="_blank">TheGameMaster</a>
-            <a href="https://boardgamegeek.com/boardgame/356630/adventure-land" target="_blank">BoardGameGeek</a>
+            <a href="https://www.instagram.com/adventure_land2023/" target="_blank" id="T.instagram">Instagram</a>
+            <a href="https://www.thegamemaster.nl/nl/spellen-adventureland.htm" target="_blank"
+                id="T.theGameMaster">TheGameMaster</a>
+            <a href="https://boardgamegeek.com/boardgame/356630/adventure-land" target="_blank"
+                id="T.boardGameGeek">BoardGameGeek</a>
             <a href="assets/rules.pdf" download id="download-link">Download Rules PDF</a>
         </div>
     </div>
-    <p>v1.1.0</p>
+    <p>v1.2.0</p>
     <script src="data.js"></script>
     <script src="main.js">
         document.getElementById('download-link').addEventListener('click', function () {

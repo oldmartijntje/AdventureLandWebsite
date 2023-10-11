@@ -57,3 +57,46 @@ const reviews = [
         link: "https://boardgamegeek.com/thread/3159354/review-bordspelwereldnl-dutch",
     },
 ];
+
+const translations = {
+    "EN": {
+        "T.title": "Adventure Land Board Game",
+        "T.headerTitle": "Adventure Land - Build Your Dream Park",
+        "prevButton": "Previous",
+        "nextButton": "Next",
+        "T.infoTitle1": "Build Your Dream Park!",
+        "T.infoText1": "In Adventure Land, start your journey to create the most exciting theme park. Build thrilling attractions, hire the best staff, and invest your money wisely. Complete secret missions to boost the popularity of your park. The ultimate goal is to win the prestigious Award!",
+        "T.infoTitle2": "One Grand Adventure",
+        "T.infoText2": "Adventure Land feels like a huge roller coaster ride. In just one hour, so much happens that you'll need a moment to catch your breath. It all starts with the auction of the parks. Each park looks completely different in every game. Which one will you choose? This jumpstart gives you certain opportunities and possible strategies right from the start. Will you specialize in a particular theme? Or will you hire valuable staff? Will you decide to hire janitors and cash in on every restroom built, or will you play it safe and hire a gardener for a stable income stream? The choice is yours!",
+        "T.reviewsTitle": "Reviews",
+        "prevReviewButton": "Previous Review",
+        "nextReviewButton": "Next Review",
+        "T.linksTitle": "Links:",
+        "T.instagram": "Instagram",
+        "T.theGameMaster": "TheGameMaster",
+        "T.boardGameGeek": "BoardGameGeek",
+        "download-link": "Download Rules PDF",
+        "T.reviewLink": "Original Post",
+        "T.reviewRating": "Rating"
+    },
+    "NL": {
+        "T.title": "Adventure Land Bordspel",
+        "T.headerTitle": "Adventure Land - Bouw Jouw Droompark",
+        "prevButton": "Vorige",
+        "nextButton": "Volgende",
+        "T.infoTitle1": "Bouw Jouw Droompark!",
+        "T.infoText1": "In Adventure Land begint je reis om het meest opwindende themapark te creëren. Bouw spannende attracties, huur het beste personeel in en investeer je geld wijselijk. Voltooi geheime missies om de populariteit van je park te vergroten. Het ultieme doel is om de prestigieuze Award te winnen!",
+        "T.infoTitle2": "Een Groots Avontuur",
+        "T.infoText2": "Adventure Land voelt als een enorme achtbaanrit. In slechts één uur gebeurt er zo veel dat je even moet bijkomen. Het begint allemaal met de veiling van de parken. Elk park ziet er in elk spel volledig anders uit. Welke kies je? Deze kickstart biedt je bepaalde kansen en mogelijke strategieën vanaf het begin. Zal je je specialiseren in een bepaald thema? Of zal je waardevol personeel aannemen? Besluit je om schoonmakers in dienst te nemen en geld te verdienen met elke gebouwde wc, of speel je het veilig en neem je een tuinman voor een stabiele inkomstenstroom? De keuze is aan jou!",
+        "T.reviewsTitle": "Recensies",
+        "prevReviewButton": "Vorige Recensie",
+        "nextReviewButton": "Volgende Recensie",
+        "T.linksTitle": "Links:",
+        "T.instagram": "Instagram",
+        "T.theGameMaster": "TheGameMaster",
+        "T.boardGameGeek": "BoardGameGeek",
+        "download-link": "Download Spelregels PDF",
+        "T.reviewLink": "Origineel Bericht",
+        "T.reviewRating": "Beoordeling"
+    }
+};

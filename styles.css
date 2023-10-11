@@ -186,3 +186,7 @@ button:hover {
         /* Darker shade when hovered on mobile */
     }
 }
+
+.flag-icon {
+    padding: 0px;
+}

@@ -11,6 +11,11 @@ let currentIndex = 0;
 let imageIntervalId;
 let reviewIntervalId;
 let currentReviewIndex = 0;
+var language = localStorage.getItem("language");
+if (language == null) {
+    language = "NL";
+    localStorage.setItem("language", language);
+}
 
 function showImage(index) {
     galleryImage.src = imageUrls[index];
@@ -36,6 +41,11 @@ function stopImageCycle() {
         'event_category': 'Button Clicks',
         'event_label': 'navigated images',
     });
+}
+
+function setLanguage(language) {
+    localStorage.setItem("language", language);
+    setTranslationsOnElements(language);
 }
 
 function displayReviews() {
@@ -64,7 +74,7 @@ function displayReviews() {
     `;
 
     if (review.rating) {
-        reviewInfo.innerHTML += `<div class="review-rating">Rating: ${review.rating}</div>
+        reviewInfo.innerHTML += `<div class="review-rating"><span id="T.reviewRating">${getCorrectTranslation("T.reviewRating")}</span>: ${review.rating}</div>
         `;
     }
 
@@ -74,7 +84,7 @@ function displayReviews() {
 
     if (review.link) {
         reviewInfo.innerHTML += `
-        <a class="review-link" href="${review.link}" target="_blank">Original Post</a>
+        <a class="review-link" href="${review.link}" target="_blank" id="T.reviewLink">${getCorrectTranslation("T.reviewLink")}</a>
         `;
     }
 
@@ -105,6 +115,17 @@ function stopReviewCycle() {
     clearInterval(reviewIntervalId);
 }
 
+function setTranslationsOnElements(language) {
+    for (let key in translations[language]) {
+        document.getElementById(key).innerHTML = translations[language][key];
+    }
+}
+
+function getCorrectTranslation(key) {
+    var language = localStorage.getItem("language");
+    return translations[language][key];
+}
+
 nextImageButton.addEventListener('click', nextImage);
 prevImageButton.addEventListener('click', prevImage);
 prevImageButton.addEventListener('click', stopImageCycle);
@@ -116,5 +137,6 @@ nextReviewButton.addEventListener('click', stopReviewCycle);
 prevReviewButton.addEventListener('click', stopReviewCycle);
 
 displayReviews();
-startReviewCycle()
+startReviewCycle();
 startImageCycle();
+setTranslationsOnElements(language)
