@@ -117,7 +117,10 @@ function stopReviewCycle() {
 
 function setTranslationsOnElements(language) {
     for (let key in translations[language]) {
-        document.getElementById(key).innerHTML = translations[language][key];
+        element = document.getElementById(key);
+        if (element != null) {
+            element.innerHTML = translations[language][key];
+        }
     }
 }
 
