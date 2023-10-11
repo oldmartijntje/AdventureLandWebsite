@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="T.title"></title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+
+
+    <meta property="og:title" content="Adventure Land - Build Your Dream Park.">
+    <meta property="og:description"
+        content="In Adventure Land, start your journey to create the most exciting theme park. Build thrilling attractions, hire the best staff, and invest your money wisely. Complete secret missions to boost the popularity of your park. The ultimate goal is to win the prestigious Award!">
+    <meta property="og:image" content="https://www.thegamemaster.nl/images/2023/Adventureland/Adventureland_2D_HR.jpg">
+    <meta property="og:url" content="https://adventure-land.nl">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Adventure Land">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WXLE29XG2Y"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-WXLE29XG2Y');
+</script>
+
+<body>
+    <header>
+        <h1 id="T.headerTitle"></h1>
+    </header>
+    <div class="container">
+        <div id="language-selector">
+            <button onclick="setLanguage('NL')" class="flag-icon flag-icon-nl" title="Nederlands"></button>
+            <button onclick="setLanguage('EN')" class="flag-icon flag-icon-us" title="English"></button>
+            <button onclick="setLanguage('DE')" class="flag-icon flag-icon-de" title="Deutsch"></button>
+            <button onclick="setLanguage('FR')" class="flag-icon flag-icon-fr" title="français"></button>
+        </div>
+        <div class="ïmgContainer">
+            <img id="galleryImage" src="assets/Adventureland_3D.jpg" alt="">
+        </div>
+        <button id="prevButton"></button>
+        <button id="nextButton"></button>
+
+
+        <div class="additional-info">
+            <h2 id="T.infoTitle1"></h2>
+            <p id="T.infoText1"></p>
+
+            <h2 id="T.infoTitle2"></h2>
+            <p id="T.infoText2"></p>
+        </div>
+
+
+        <div class="review-section">
+            <h2 id="T.reviewsTitle"></h2>
+            <div id="reviews-container" class="reviews-container"></div>
+            <button id="prevReviewButton"></button>
+            <button id="nextReviewButton"></button>
+        </div>
+
+
+        <h2 id="T.linksTitle"></h2>
+        <div class="social-links">
+            <a href="https://www.instagram.com/adventure_land2023/" target="_blank" id="T.instagram"></a>
+            <a href="https://www.thegamemaster.nl/nl/spellen-adventureland.htm" target="_blank"
+                id="T.theGameMaster"></a>
+            <a href="https://boardgamegeek.com/boardgame/356630/adventure-land" target="_blank"
+                id="T.boardGameGeek"></a>
+            <a href="assets/rules.pdf" download id="download-link"></a>
+        </div>
+    </div>
+    <p>v1.2.1</p>
+    <script src="data.js"></script>
+    <script src="main.js">
+        document.getElementById('download-link').addEventListener('click', function () {
+            gtag('event', 'button_click', {
+                'event_category': 'Button Clicks',
+                'event_label': 'Download Rules PDF',
+            });
+        });
+    </script>
+</body>
+
+</html>
