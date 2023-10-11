@@ -24,7 +24,7 @@ const reviews = [
     {
         name: "oldmartijntje",
         rating: 10,
-        comment: "Awesome game, fun for all ages.",
+        comment: "Awesome game, fun for all ages. The art is on point, with a lot of fun jokes. The production quality is good. The gameplay mechanics are very fun. Everyone I talk to about this game likes it. Even if you think you are losing mid game, you can still win in the end. I would recommend this to pretty much every type of player. Because you can play it casually or very strategic, and both types of players can win.",
         link: "https://boardgamegeek.com/boardgame/356630/adventure-land/ratings#:~:text=10-,oldmartijntje,-Oct%202023",
     },
     {
