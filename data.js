@@ -60,6 +60,7 @@ const reviews = [
 
 const translations = {
     "EN": {
+        "T.explanationVideo": "Explanation Video",
         "T.title": "Adventure Land Board Game",
         "T.headerTitle": "Adventure Land - Build Your Dream Park",
         "prevButton": "Previous",
@@ -80,6 +81,7 @@ const translations = {
         "T.reviewRating": "Rating"
     },
     "NL": {
+        "T.explanationVideo": "Uitleg Video",
         "T.title": "Adventure Land Bordspel",
         "T.headerTitle": "Adventure Land - Bouw Jouw Droompark",
         "prevButton": "Vorige",
@@ -100,6 +102,7 @@ const translations = {
         "T.reviewRating": "Beoordeling"
     },
     "FR": {
+        "T.explanationVideo": "vidéo d'explication",
         "T.title": "Jeu de Société Aventure Land",
         "T.headerTitle": "Aventure Land - Construisez Votre Parc de Rêve",
         "prevButton": "Précédent",
@@ -120,6 +123,7 @@ const translations = {
         "T.reviewRating": "Évaluation"
     },
     "DE": {
+        "T.explanationVideo": "Erklärungsvideo",
         "T.title": "Adventure Land Brettspiel",
         "T.headerTitle": "Adventure Land - Baue deinen Traumpark",
         "prevButton": "Vorherige",
