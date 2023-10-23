@@ -1,3 +1,4 @@
+const dataVersion = "v1.0.0";
 const imageUrls = [
     'assets/Adventureland_3D.jpg',
     'assets/Cover 2D.jpg',

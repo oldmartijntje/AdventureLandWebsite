@@ -3,6 +3,10 @@ const prevImageButton = document.getElementById('prevButton');
 const nextImageButton = document.getElementById('nextButton');
 const prevReviewButton = document.getElementById('prevReviewButton');
 const nextReviewButton = document.getElementById('nextReviewButton');
+const jsVersionElement = document.getElementById('jsVersion');
+jsVersionElement.innerHTML = "v1.0.0";
+const dataVersionElement = document.getElementById('dataVersion');
+dataVersionElement.innerHTML = dataVersion;
 
 // Import the variables from data.js
 // import { reviews, imageUrls } from "./data.js";
