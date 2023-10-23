@@ -62,7 +62,7 @@ const reviews = [
 const translations = {
     "cat": {
         "T.title": "Adventure Land Boawd Game",
-        "T.headerTitle": "Adventure Land - Buildz Yer Dreamz Park",
+        "T.headerTitle": "Adventure Land - Buildz Yer Dreamz Pawk",
         "prevButton": "Prevy",
         "nextButton": "Nexty",
         "T.infoTitle1": "Buildz Yer Dreamz Park!",
