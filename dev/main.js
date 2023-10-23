@@ -4,10 +4,9 @@ const nextImageButton = document.getElementById('nextButton');
 const prevReviewButton = document.getElementById('prevReviewButton');
 const nextReviewButton = document.getElementById('nextReviewButton');
 const jsVersionElement = document.getElementById('jsVersion');
-jsVersionElement.innerHTML = "v1.0.0";
+jsVersionElement.innerHTML = "v1.1.0";
 const dataVersionElement = document.getElementById('dataVersion');
 dataVersionElement.innerHTML = dataVersion;
-
 // Import the variables from data.js
 // import { reviews, imageUrls } from "./data.js";
 
@@ -16,9 +15,18 @@ let imageIntervalId;
 let reviewIntervalId;
 let currentReviewIndex = 0;
 var language = localStorage.getItem("language");
-if (language == null) {
+if (language == null || isThisAKey(language, translations) == false) {
     language = "NL";
     localStorage.setItem("language", language);
+}
+
+function isThisAKey(key, dict) {
+    const keys = Object.keys(dict);
+    if (keys.includes(key)) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 function showImage(index) {
