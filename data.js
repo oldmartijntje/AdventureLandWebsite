@@ -60,7 +60,6 @@ const reviews = [
 
 const translations = {
     "EN": {
-        "T.explanationVideo": "Explanation Video",
         "T.title": "Adventure Land Board Game",
         "T.headerTitle": "Adventure Land - Build Your Dream Park",
         "prevButton": "Previous",
@@ -75,13 +74,13 @@ const translations = {
         "T.linksTitle": "Links:",
         "T.instagram": "Instagram",
         "T.theGameMaster": "TheGameMaster",
+        "T.explanationVideo": "Explanation Youtube Video",
         "T.boardGameGeek": "BoardGameGeek",
         "download-link": "Download Rules PDF",
         "T.reviewLink": "Original Post",
         "T.reviewRating": "Rating"
     },
     "NL": {
-        "T.explanationVideo": "Uitleg Video",
         "T.title": "Adventure Land Bordspel",
         "T.headerTitle": "Adventure Land - Bouw Jouw Droompark",
         "prevButton": "Vorige",
@@ -96,13 +95,13 @@ const translations = {
         "T.linksTitle": "Links:",
         "T.instagram": "Instagram",
         "T.theGameMaster": "TheGameMaster",
+        "T.explanationVideo": "Uitleg Youtube Video",
         "T.boardGameGeek": "BoardGameGeek",
         "download-link": "Download Spelregels PDF",
         "T.reviewLink": "Origineel Bericht",
         "T.reviewRating": "Beoordeling"
     },
     "FR": {
-        "T.explanationVideo": "vidéo d'explication",
         "T.title": "Jeu de Société Aventure Land",
         "T.headerTitle": "Aventure Land - Construisez Votre Parc de Rêve",
         "prevButton": "Précédent",
@@ -117,13 +116,13 @@ const translations = {
         "T.linksTitle": "Liens :",
         "T.instagram": "Instagram",
         "T.theGameMaster": "TheGameMaster",
+        "T.explanationVideo": "Youtube Vidéo d'explication",
         "T.boardGameGeek": "BoardGameGeek",
         "download-link": "Télécharger les Règles en PDF",
         "T.reviewLink": "Publication Originale",
         "T.reviewRating": "Évaluation"
     },
     "DE": {
-        "T.explanationVideo": "Erklärungsvideo",
         "T.title": "Adventure Land Brettspiel",
         "T.headerTitle": "Adventure Land - Baue deinen Traumpark",
         "prevButton": "Vorherige",
@@ -138,6 +137,7 @@ const translations = {
         "T.linksTitle": "Links:",
         "T.instagram": "Instagram",
         "T.theGameMaster": "TheGameMaster",
+        "T.explanationVideo": "Youtube Erklärungsvideo",
         "T.boardGameGeek": "BoardGameGeek",
         "download-link": "Spielregeln als PDF herunterladen",
         "T.reviewLink": "Ursprünglicher Beitrag",
