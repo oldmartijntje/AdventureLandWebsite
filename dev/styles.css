@@ -5,6 +5,16 @@ body {
     padding: 0;
 }
 
+.d-flex
+{
+    display: flex;
+}
+
+.justify-content-center
+{
+    justify-content: center;
+}
+
 header {
     background-color: #ff6600;
     color: white;
