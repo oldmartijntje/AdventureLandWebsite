@@ -142,5 +142,26 @@ const translations = {
         "download-link": "Spielregeln als PDF herunterladen",
         "T.reviewLink": "Ursprünglicher Beitrag",
         "T.reviewRating": "Bewertung"
+    },
+    "HU": {
+        "T.title": "Adventure Land Bordspel",
+        "T.headerTitle": "Adventure Land - Építsd fel álomparkod",
+        "prevButton": "Előző",
+        "nextButton": "Következő",
+        "T.infoTitle1": "Építsd fel álomparkod!",
+        "T.infoText1": "Az Adventure Landben kezdődik az utazásod a legizgalmasabb témaközpont létrehozásához. Építs izgalmas attrakciókat, alkalmazzd a legjobb személyzetet, és befektess pénzed bölcsen. Teljesíts titkos küldetéseket a park népszerűségének növelése érdekében. A végső cél az elismert díj elnyerése!",
+        "T.infoTitle2": "Egy hatalmas kaland",
+        "T.infoText2": "Az Adventure Land egy hatalmas hullámvasút-élményhez hasonló. Egy óra alatt oly sok történik, hogy egy pillanatra pihenned kell. Minden a parkok árverésével kezdődik. Minden játékban teljesen más a park kinézete. Melyiket választod? Ez a kezdeti lökés ad bizonyos lehetőségeket és stratégiákat. Specializálsz-e egy adott témára? Vagy értékes személyzetet veszel fel? Döntesz-e a takarítók alkalmazása mellett, és pénzt keresel minden WC-vel, vagy biztonságosabb utat választasz, és kertészt veszel egy stabil jövedelem forrásként? A választás a tiéd!",
+        "T.reviewsTitle": "Értékelések",
+        "prevReviewButton": "Előző Értékelés",
+        "nextReviewButton": "Következő Értékelés",
+        "T.linksTitle": "Linkek:",
+        "T.instagram": "Instagram",
+        "T.theGameMaster": "TheGameMaster",
+        "T.explanationVideo": "Magyarázó YouTube Videó",
+        "T.boardGameGeek": "BoardGameGeek",
+        "download-link": "Játékszabályok Letöltése PDF-ben",
+        "T.reviewLink": "Eredeti Cikk",
+        "T.reviewRating": "Értékelés"
     }
 };
