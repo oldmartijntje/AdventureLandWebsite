@@ -15,6 +15,8 @@ const imageUrls = [
 
 ];
 
+const defaultTranslationLanguage = "EN";
+
 const reviews = [
     {
         name: "markmasters",
@@ -58,6 +60,15 @@ const reviews = [
         link: "https://boardgamegeek.com/thread/3159354/review-bordspelwereldnl-dutch",
     },
 ];
+
+const hrefTranslations = {
+    "EN": {
+        "T.explanationVideo": "https://www.youtube.com/watch?v=Ag2TLuuw2qM"
+    },
+    "NL": {
+        "T.explanationVideo": "https://www.youtube.com/watch?v=AhJIqmLuR6M"
+    }
+};
 
 const translations = {
     "EN": {

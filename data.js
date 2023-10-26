@@ -1,4 +1,4 @@
-const dataVersion = "v1.0.0";
+const dataVersion = "v1.1.0";
 const imageUrls = [
     'assets/Adventureland_3D.jpg',
     'assets/Cover 2D.jpg',
@@ -14,6 +14,7 @@ const imageUrls = [
     'assets/Award card.jpg',
 
 ];
+const defaultTranslationLanguage = "EN";
 
 const reviews = [
     {
@@ -58,6 +59,15 @@ const reviews = [
         link: "https://boardgamegeek.com/thread/3159354/review-bordspelwereldnl-dutch",
     },
 ];
+
+const hrefTranslations = {
+    "EN": {
+        "T.explanationVideo": "https://www.youtube.com/watch?v=Ag2TLuuw2qM"
+    },
+    "NL": {
+        "T.explanationVideo": "https://www.youtube.com/watch?v=AhJIqmLuR6M"
+    }
+};
 
 const translations = {
     "EN": {

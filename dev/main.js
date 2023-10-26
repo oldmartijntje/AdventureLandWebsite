@@ -4,7 +4,7 @@ const nextImageButton = document.getElementById('nextButton');
 const prevReviewButton = document.getElementById('prevReviewButton');
 const nextReviewButton = document.getElementById('nextReviewButton');
 const jsVersionElement = document.getElementById('jsVersion');
-jsVersionElement.innerHTML = "v1.1.0";
+jsVersionElement.innerHTML = "v1.2.0";
 const dataVersionElement = document.getElementById('dataVersion');
 dataVersionElement.innerHTML = dataVersion;
 // Import the variables from data.js
@@ -131,7 +131,21 @@ function setTranslationsOnElements(language) {
     for (let key in translations[language]) {
         element = document.getElementById(key);
         if (element != null) {
-            element.innerHTML = translations[language][key];
+            if (key in translations[language]) {
+                element.innerHTML = translations[language][key];
+            } else {
+                element.innerHTML = translations[defaultTranslationLanguage][key];
+            }
+        }
+    }
+    for (let key in hrefTranslations[language]) {
+        element = document.getElementById(key);
+        if (element != null) {
+            if (key in hrefTranslations[language]) {
+                element.href = hrefTranslations[language][key];
+            } else {
+                element.href = hrefTranslations[defaultTranslationLanguage][key];
+            }
         }
     }
 }
