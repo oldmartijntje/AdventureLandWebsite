@@ -12,9 +12,9 @@
 
     <meta property="og:title" content="Adventure Land - Build Your Dream Park.">
     <meta property="og:description"
-        content="In Adventure Land, start your journey to create the most exciting theme park. Build thrilling attractions, hire the best staff, and invest your money wisely. Complete secret missions to boost the popularity of your park. The ultimate goal is to win the prestigious Award!">
+        content="A list of all assignmentcards.">
     <meta property="og:image" content="https://www.thegamemaster.nl/images/2023/Adventureland/Adventureland_2D_HR.jpg">
-    <meta property="og:url" content="https://adventure-land.nl">
+    <meta property="og:url" content="https://adventure-land.nl/assignmentcards">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Adventure Land">
 </head>
@@ -36,9 +36,8 @@
         <div id="language-selector">
             <button onclick="setLanguage('NL')" class="flag-icon flag-icon-nl" title="Nederlands"></button>
             <button onclick="setLanguage('EN')" class="flag-icon flag-icon-us" title="English"></button>
-            <button onclick="setLanguage('DE')" class="flag-icon flag-icon-de" title="Deutsch"></button>
-            <button onclick="setLanguage('FR')" class="flag-icon flag-icon-fr" title="français"></button>
-            <button onclick="setLanguage('HU')" class="flag-icon flag-icon-hu" title="Magyar"></button>
+            <!-- <button onclick="setLanguage('DE')" class="flag-icon flag-icon-de" title="Deutsch"></button>
+            <button onclick="setLanguage('FR')" class="flag-icon flag-icon-fr" title="français"></button> -->
         </div>
         <div class="imgContainer">
             <div class="d-flex justify-content-center">
@@ -79,12 +78,11 @@
             <a href="https://adventure-land.nl/assignmentcards" target="_blank" id="T.assignmentcardsHREF"></a>
         </div>
     </div>
-    <p>DEV mode, <a href="https://adventure-land.nl" target="_blank">Disable</a></p>
-    <p>HTML: <span>v1.3.0.0B</span></p>
+    <p>HTML: <span>v1.3.0.0</span></p>
     <p>JS: <span id="jsVersion"></span></p>
     <p>Data: <span id="dataVersion"></span></p>
-    <script src="../data.js"></script>
-    <script src="../main.js">
+    <script src="data.js"></script>
+    <script src="main.js">
         document.getElementById('download-link').addEventListener('click', function () {
             gtag('event', 'button_click', {
                 'event_category': 'Button Clicks',

@@ -1,4 +1,4 @@
-const dataVersion = "v0.1.0";
+const dataVersion = "v0.2.0";
 const imageUrls = [
     'assets/Adventureland_3D.jpg',
     'assets/Cover 2D.jpg',
@@ -15,7 +15,7 @@ const imageUrls = [
 
 ];
 
-const defaultTranslationLanguage = "EN";
+const defaultTranslationLanguage = "cat";
 
 const reviews = [
     {
@@ -62,11 +62,8 @@ const reviews = [
 ];
 
 const hrefTranslations = {
-    "EN": {
+    "cat": {
         "T.explanationVideo": "https://www.youtube.com/watch?v=Ag2TLuuw2qM"
-    },
-    "NL": {
-        "T.explanationVideo": "https://www.youtube.com/watch?v=AhJIqmLuR6M"
     }
 };
 
@@ -90,6 +87,7 @@ const translations = {
         "T.boardGameGeek": "BoardGameKitteh",
         "download-link": "Download Rulez PDF",
         "T.reviewLink": "Orig'nul Post",
-        "T.reviewRating": "Rating"
+        "T.reviewRating": "Rating",
+        "T.assignmentcardsHREF": "All Assignment Cardz."
     }
 };
