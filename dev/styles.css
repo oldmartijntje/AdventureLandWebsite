@@ -28,7 +28,7 @@ h1 {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 850px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
@@ -44,6 +44,8 @@ img {
 
 .social-links {
     margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .social-links a {
