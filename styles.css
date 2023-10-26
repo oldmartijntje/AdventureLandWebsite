@@ -222,19 +222,12 @@ button:hover {
         background-color: #cc4400;
         /* Darker shade when hovered on mobile */
     }
-
-    #cardsContainer {
-
-    }
     
     .assignmentcard {
         width: 35%;
 
     }
     
-    .assignmentcard-title {
-
-    }
 }
 
 .flag-icon {
