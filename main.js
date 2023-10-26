@@ -30,7 +30,7 @@ function isThisAKey(key, dict) {
 }
 
 function showImage(index) {
-    galleryImage.src = imageUrls[index];
+    galleryImage.src = `${pathDepth}${imageUrls[index]}`;
 }
 
 function nextImage() {
@@ -75,7 +75,7 @@ function displayReviews() {
     } else {
         const imageElement = document.createElement("img");
         imageElement.classList.add("review-image");
-        imageElement.src = "assets/default.jpg";
+        imageElement.src = `${pathDepth}assets/default.jpg`;
         reviewElement.appendChild(imageElement);
     }
 
