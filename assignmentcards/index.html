@@ -33,35 +33,18 @@
         <h1 id="T.headerTitle"></h1>
     </header>
     <div class="container">
+        <div class="social-links">
+            <a href="https://adventure-land.nl" target="_blank" id="T.Home"></a>
+        </div>
         <div id="language-selector">
-            <button onclick="setLanguage('NL')" class="flag-icon flag-icon-nl" title="Nederlands"></button>
-            <button onclick="setLanguage('EN')" class="flag-icon flag-icon-us" title="English"></button>
-            <!-- <button onclick="setLanguage('DE')" class="flag-icon flag-icon-de" title="Deutsch"></button>
-            <button onclick="setLanguage('FR')" class="flag-icon flag-icon-fr" title="français"></button> -->
+            <button onclick="setLanguage('NL', 1)" class="flag-icon flag-icon-nl" title="Nederlands"></button>
+            <button onclick="setLanguage('EN', 1)" class="flag-icon flag-icon-us" title="English"></button>
+            <!-- <button onclick="setLanguage('DE', 1)" class="flag-icon flag-icon-de" title="Deutsch"></button>
+            <button onclick="setLanguage('FR', 1)" class="flag-icon flag-icon-fr" title="français"></button>
+            <button onclick="setLanguage('HU', 1)" class="flag-icon flag-icon-hu" title="Magyar"></button> -->
         </div>
-        <div class="imgContainer">
-            <div class="d-flex justify-content-center">
-                <img id="galleryImage" src="../assets/Adventureland_3D.jpg" alt="">
-            </div>
-            <div class="d-flex justify-content-center">
-                <button id="prevButton"></button>
-                <button id="nextButton"></button>
-            </div>
-        </div>
-        <div class="additional-info">
-            <h2 id="T.infoTitle1"></h2>
-            <p id="T.infoText1"></p>
-
-            <h2 id="T.infoTitle2"></h2>
-            <p id="T.infoText2"></p>
-        </div>
-
-
-        <div class="review-section">
-            <h2 id="T.reviewsTitle"></h2>
-            <div id="reviews-container" class="reviews-container"></div>
-            <button id="prevReviewButton"></button>
-            <button id="nextReviewButton"></button>
+        
+        <div id="cardsContainer">
         </div>
 
 
@@ -75,10 +58,10 @@
             <a href="https://boardgamegeek.com/boardgame/356630/adventure-land" target="_blank"
                 id="T.boardGameGeek"></a>
             <a href="assets/rules.pdf" download id="download-link"></a>
-            <a href="https://adventure-land.nl/assignmentcards" target="_blank" id="T.assignmentcardsHREF"></a>
+            <a href="https://adventure-land.nl" target="_blank" id="T.HomeHREF"></a>
         </div>
     </div>
-    <p>HTML: <span>v1.3.0.0</span></p>
+    <p>HTML: <span>v1.3.1.0</span></p>
     <p>JS: <span id="jsVersion"></span></p>
     <p>Data: <span id="dataVersion"></span></p>
     <script src="../data.js"></script>
@@ -92,6 +75,10 @@
                 'event_label': 'Download Rules PDF',
             });
         });
+    </script>
+    <script>
+        showAssignmentcards();
+        setTranslationsOnElements(language);
     </script>
 </body>
 

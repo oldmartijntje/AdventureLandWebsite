@@ -1,4 +1,4 @@
-const dataVersion = "v1.2.0";
+const dataVersion = "v1.2.1";
 const imageUrls = [
     'assets/Adventureland_3D.jpg',
     'assets/Cover 2D.jpg',
@@ -141,7 +141,9 @@ const translations = {
         "T.reviewLink": "Publication Originale",
         "T.reviewRating": "Évaluation",
         "T.assignmentcardsHREF": "Traduction française des assignment-cartes de mission",
-        "T.assignmentcard": "carte de mission"
+        "T.Home": "Page d'accueil",
+        "T.HomeHREF": "Retour à la page d'accueil",
+        "T.assignmentcard": "carte de mission",
     },
     "DE": {
         "T.title": "Adventure Land Brettspiel",
@@ -164,6 +166,8 @@ const translations = {
         "T.reviewLink": "Ursprünglicher Beitrag",
         "T.reviewRating": "Bewertung",
         "T.assignmentcardsHREF": "Deutsche Übersetzung der assignment-Aufgabenkarten",
+        "T.Home": "Startseite",
+        "T.HomeHREF": "Zurück zur Startseite",
         "T.assignmentcard": "Aufgabenkarte"
     },
     "HU": {
@@ -187,6 +191,8 @@ const translations = {
         "T.reviewLink": "Eredeti Cikk",
         "T.reviewRating": "Értékelés",
         "T.assignmentcardsHREF": "Magyar fordítás az assignment-feladatkártyákhoz",
+        "T.Home": "Kezdőlap",
+        "T.HomeHREF": "Vissza a Kezdőlapra",
         "T.assignmentcard": "feladatkártya"
     }
 };
@@ -201,7 +207,7 @@ const assignmentCardTranslations = {
         "No Crime": "Do not possess any attractions of the Crime theme / Yellow color",
         "In the City": "Do not possess any attractions of the Jungle theme / Green color",
         "No Fantasy": "Do not possess any attractions of the Science Fiction theme / Black color",
-        "No Rhythm": "Do not possess any attractions of the Music theme / Red color",
+        "No Rythm": "Do not possess any attractions of the Music theme / Red color",
         "The Lands": "Do not possess any attractions of the Ocean theme / Blue color",
         "Focus": "Build attractions in up to 3 different themes",
         "Diversity": "Build attractions in each theme",
@@ -309,7 +315,7 @@ const assignmentCardTranslations = {
         "No Crime": "Ne birtokolj látványosságokat a Bűn témában / Sárga szín",
         "In the City": "Ne birtokolj látványosságokat a Dzsungel témában / Zöld szín",
         "No Fantasy": "Ne birtokolj látványosságokat a Sci-fi témában / Fekete szín",
-        "No Rhythm": "Ne birtokolj látványosságokat a Zene témában / Piros szín",
+        "No Rythm": "Ne birtokolj látványosságokat a Zene témában / Piros szín",
         "The Lands": "Ne birtokolj látványosságokat az Óceán témában / Kék szín",
         "Focus": "Építs látványosságokat legfeljebb 3 különböző témában",
         "Diversity": "Építs látványosságokat minden témában",

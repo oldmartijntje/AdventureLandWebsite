@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="T.title"></title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="icon" href="../../assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
 
 
     <meta property="og:title" content="Adventure Land - Build Your Dream Park.">
     <meta property="og:description"
-        content="In Adventure Land, start your journey to create the most exciting theme park. Build thrilling attractions, hire the best staff, and invest your money wisely. Complete secret missions to boost the popularity of your park. The ultimate goal is to win the prestigious Award!">
+        content="A list of all assignmentcards.">
     <meta property="og:image" content="https://www.thegamemaster.nl/images/2023/Adventureland/Adventureland_2D_HR.jpg">
-    <meta property="og:url" content="https://adventure-land.nl">
+    <meta property="og:url" content="https://adventure-land.nl/assignmentcards">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Adventure Land">
 </head>
@@ -33,36 +33,18 @@
         <h1 id="T.headerTitle"></h1>
     </header>
     <div class="container">
+        <div class="social-links">
+            <a href="https://adventure-land.nl" target="_blank" id="T.Home"></a>
+        </div>
         <div id="language-selector">
-            <button onclick="setLanguage('NL')" class="flag-icon flag-icon-nl" title="Nederlands"></button>
-            <button onclick="setLanguage('EN')" class="flag-icon flag-icon-us" title="English"></button>
-            <!-- <button onclick="setLanguage('DE')" class="flag-icon flag-icon-de" title="Deutsch"></button>
-            <button onclick="setLanguage('FR')" class="flag-icon flag-icon-fr" title="français"></button>
-            <button onclick="setLanguage('HU')" class="flag-icon flag-icon-hu" title="Magyar"></button> -->
+            <button onclick="setLanguage('NL', 1)" class="flag-icon flag-icon-nl" title="Nederlands"></button>
+            <button onclick="setLanguage('EN', 1)" class="flag-icon flag-icon-us" title="English"></button>
+            <button onclick="setLanguage('DE', 1)" class="flag-icon flag-icon-de" title="Deutsch"></button>
+            <button onclick="setLanguage('FR', 1)" class="flag-icon flag-icon-fr" title="français"></button>
+            <button onclick="setLanguage('HU', 1)" class="flag-icon flag-icon-hu" title="Magyar"></button>
         </div>
-        <div class="imgContainer">
-            <div class="d-flex justify-content-center">
-                <img id="galleryImage" src="assets/Adventureland_3D.jpg" alt="">
-            </div>
-            <div class="d-flex justify-content-center">
-                <button id="prevButton"></button>
-                <button id="nextButton"></button>
-            </div>
-        </div>
-        <div class="additional-info">
-            <h2 id="T.infoTitle1"></h2>
-            <p id="T.infoText1"></p>
-
-            <h2 id="T.infoTitle2"></h2>
-            <p id="T.infoText2"></p>
-        </div>
-
-
-        <div class="review-section">
-            <h2 id="T.reviewsTitle"></h2>
-            <div id="reviews-container" class="reviews-container"></div>
-            <button id="prevReviewButton"></button>
-            <button id="nextReviewButton"></button>
+        
+        <div id="cardsContainer">
         </div>
 
 
@@ -76,17 +58,17 @@
             <a href="https://boardgamegeek.com/boardgame/356630/adventure-land" target="_blank"
                 id="T.boardGameGeek"></a>
             <a href="assets/rules.pdf" download id="download-link"></a>
-            <a href="https://adventure-land.nl/assignmentcards" target="_blank" id="T.assignmentcardsHREF"></a>
+            <a href="https://adventure-land.nl" target="_blank" id="T.HomeHREF"></a>
         </div>
     </div>
     <p>HTML: <span>v1.3.1.0</span></p>
     <p>JS: <span id="jsVersion"></span></p>
     <p>Data: <span id="dataVersion"></span></p>
-    <script src="data.js"></script>
+    <script src="../../data.js"></script>
     <script>
-        const pathDepth = "";
+        const pathDepth = "../../";
     </script>
-    <script src="main.js">
+    <script src="../../main.js">
         document.getElementById('download-link').addEventListener('click', function () {
             gtag('event', 'button_click', {
                 'event_category': 'Button Clicks',
@@ -95,9 +77,8 @@
         });
     </script>
     <script>
-        displayReviews();
-        startReviewCycle();
-        startImageCycle();
+        showAssignmentcards();
+        setTranslationsOnElements(language);
     </script>
 </body>
 

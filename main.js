@@ -4,7 +4,7 @@ const nextImageButton = document.getElementById('nextButton');
 const prevReviewButton = document.getElementById('prevReviewButton');
 const nextReviewButton = document.getElementById('nextReviewButton');
 const jsVersionElement = document.getElementById('jsVersion');
-jsVersionElement.innerHTML = "v1.2.0";
+jsVersionElement.innerHTML = "v1.2.1";
 const dataVersionElement = document.getElementById('dataVersion');
 dataVersionElement.innerHTML = dataVersion;
 // Import the variables from data.js
@@ -55,9 +55,12 @@ function stopImageCycle() {
     });
 }
 
-function setLanguage(language) {
+function setLanguage(language, type = 0) {
     localStorage.setItem("language", language);
     setTranslationsOnElements(language);
+    if (type == 1) {
+        showAssignmentcards();
+    }
 }
 
 function displayReviews() {
@@ -155,17 +158,45 @@ function getCorrectTranslation(key) {
     return translations[language][key];
 }
 
-nextImageButton.addEventListener('click', nextImage);
-prevImageButton.addEventListener('click', prevImage);
-prevImageButton.addEventListener('click', stopImageCycle);
-nextImageButton.addEventListener('click', stopImageCycle);
+function showAssignmentcards() {
+    var container = document.getElementById("cardsContainer");
+    container.innerHTML = "";
+    assignmentCards.forEach(element => {
+        const card = document.createElement("div");
+        card.classList.add("assignmentcard");
+        const title = document.createElement("div");
+        title.classList.add("assignmentcard-title");
+        title.innerText = `${getCorrectTranslation("T.assignmentcard")}: ${element.name}`
+        const text = document.createElement("p");
+        text.classList.add("assignmentcard-text");
+        text.id = element.name;
+        text.innerText = `${getCorrectCardTranslation(element.name)}`
+        const textBox = document.createElement("div");
+        textBox.classList.add("review-comment");
+        container.appendChild(card);
+        card.appendChild(title);
+        card.appendChild(textBox);
+        textBox.appendChild(text);
+    });
+}
 
-nextReviewButton.addEventListener('click', showNextReview);
-prevReviewButton.addEventListener('click', showPrevReview);
-nextReviewButton.addEventListener('click', stopReviewCycle);
-prevReviewButton.addEventListener('click', stopReviewCycle);
+function getCorrectCardTranslation(key) {
+    var language = localStorage.getItem("language");
+    return assignmentCardTranslations[language][key];
+}
 
-displayReviews();
-startReviewCycle();
-startImageCycle();
+try {
+    nextImageButton.addEventListener('click', nextImage);
+    prevImageButton.addEventListener('click', prevImage);
+    prevImageButton.addEventListener('click', stopImageCycle);
+    nextImageButton.addEventListener('click', stopImageCycle);
+
+    nextReviewButton.addEventListener('click', showNextReview);
+    prevReviewButton.addEventListener('click', showPrevReview);
+    nextReviewButton.addEventListener('click', stopReviewCycle);
+    prevReviewButton.addEventListener('click', stopReviewCycle);
+} catch (error) {
+    console.log(error);
+}
+
 setTranslationsOnElements(language)
